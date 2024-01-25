@@ -110,7 +110,31 @@ video {
 #about {
     position: relative;
     height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+
+#about .img img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+#about #about-text{
+    width: 50%;
+
+}
+#about #about-text h2,p{
+    text-align: center;
+}
+#about #about-text h2{
+    font-size: 100px;
+}
+#about #about-text p{
+    font-size: 20px;
+    line-height: 30px;
+}
+
 
 #history {
     position: relative;
@@ -167,7 +191,9 @@ video {
 .scroll-content h4:hover {
     color: #1652f99a;
     cursor: pointer;
+    /* transition: all linear 0.3s; */
 }
+
 
 @keyframes scroll {
     from {
@@ -179,3 +205,4 @@ video {
     }
 
 }
+

@@ -28,12 +28,12 @@ gsap.to("header", {
     }
 })
 
-gsap.to("img", {
+gsap.to("#logo img", {
     height: 60,
     width: 60,
     rotation: 360,
     scrollTrigger: {
-        trigger: "img",
+        trigger: "#logo img",
         scroller: "body",
         start: "top -15%",
         end: "top -16%",

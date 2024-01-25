@@ -16,20 +16,30 @@ body {
     height: 100;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     width: 5px;
     background-color: #151922;
 }
-body::-webkit-scrollbar-thumb{
+
+body::-webkit-scrollbar-thumb {
     border-radius: 50px;
     background-color: #1651F9;
 }
 
+#blur-cursor {
+    width: 100px;
+    height: 100px;
+    background-color: #1651F9;
+    border-radius: 50%;
+    position: fixed;
+    filter: blur(50px);
+}
 
 h1,
 h2,
 h4,
-p,a {
+p,
+a {
     color: aliceblue;
 }
 
@@ -97,17 +107,17 @@ video {
     line-height: 25px;
 }
 
-#about{
+#about {
     position: relative;
     height: 100vh;
 }
 
-#history{
+#history {
     position: relative;
     height: 100vh;
 }
 
-#opponents{
+#opponents {
     position: relative;
     height: 100vh;
     display: flex;
@@ -116,33 +126,37 @@ video {
     align-items: center;
 }
 
-#opponents #opp-content{
+#opponents #opp-content {
     width: 65%;
     margin-bottom: 40px;
 }
-#opponents p{
+
+#opponents p {
     font-size: 35px;
     text-align: center;
 }
-#opponents #scroll{ 
+
+#opponents #scroll {
     width: 100%;
     white-space: nowrap;
     overflow-x: scroll;
     overflow-y: hidden;
 }
-#scroll .scroll-content{
+
+#scroll .scroll-content {
     display: inline-block;
     animation-name: scroll;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-duration: 20s;
 }
-#scroll::-webkit-scrollbar{
+
+#scroll::-webkit-scrollbar {
     visibility: hidden;
 }
 
 
-.scroll-content h4{
+.scroll-content h4 {
     display: inline-block;
     font-size: 160px;
     margin-right: 15px;
@@ -150,17 +164,18 @@ video {
     color: transparent;
 }
 
-.scroll-content h4:hover{
+.scroll-content h4:hover {
     color: #1651F9;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 @keyframes scroll {
-    from{
+    from {
         transform: translateX(0);
     }
-    to{
+
+    to {
         transform: translateX(-100%);
     }
-    
+
 }

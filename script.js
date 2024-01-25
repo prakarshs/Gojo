@@ -4,6 +4,12 @@ document.addEventListener("mousemove", function (dets) {
     cursor.style.top = dets.y - 48 + "px";
 })
 
+function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 
 gsap.to("#main", {
     backgroundColor: "#151922",

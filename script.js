@@ -47,3 +47,17 @@ gsap.to("#logo img", {
         scrub: 3
     }
 })
+
+gsap.from(".img",{
+    y:50,
+    opacity:0,
+    duration:1,
+    stagger: 0.8,
+    scrollTrigger:{
+        trigger:".img",
+        scroller:"body",
+        start:"top 70%",
+        start:"top 68%",
+        scrub:3
+    }
+})
